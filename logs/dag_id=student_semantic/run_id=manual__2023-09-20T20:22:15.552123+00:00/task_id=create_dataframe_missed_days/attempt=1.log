@@ -1,0 +1,23 @@
+[2023-09-20T20:22:16.892+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: student_semantic.create_dataframe_missed_days manual__2023-09-20T20:22:15.552123+00:00 [queued]>
+[2023-09-20T20:22:16.903+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: student_semantic.create_dataframe_missed_days manual__2023-09-20T20:22:15.552123+00:00 [queued]>
+[2023-09-20T20:22:16.903+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-09-20T20:22:16.918+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): create_dataframe_missed_days> on 2023-09-20 20:22:15.552123+00:00
+[2023-09-20T20:22:16.924+0000] {standard_task_runner.py:57} INFO - Started process 1632 to run task
+[2023-09-20T20:22:16.927+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'student_semantic', 'create_dataframe_missed_days', 'manual__2023-09-20T20:22:15.552123+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/student_semantic.py', '--cfg-path', '/tmp/tmpvc27f99p']
+[2023-09-20T20:22:16.929+0000] {standard_task_runner.py:85} INFO - Job 155: Subtask create_dataframe_missed_days
+[2023-09-20T20:22:16.974+0000] {task_command.py:415} INFO - Running <TaskInstance: student_semantic.create_dataframe_missed_days manual__2023-09-20T20:22:15.552123+00:00 [running]> on host 6086152831d6
+[2023-09-20T20:22:17.250+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='student_semantic' AIRFLOW_CTX_TASK_ID='create_dataframe_missed_days' AIRFLOW_CTX_EXECUTION_DATE='2023-09-20T20:22:15.552123+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-20T20:22:15.552123+00:00'
+[2023-09-20T20:22:17.261+0000] {logging_mixin.py:151} INFO - json_data None
+[2023-09-20T20:22:17.261+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/packages/student_semantic/student_semantic.py", line 68, in create_dataframe_missed_days
+    df = pd.json_normalize(xcom_pull_obj[key_to_normalize], sep="_")
+TypeError: 'NoneType' object is not subscriptable
+[2023-09-20T20:22:17.270+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=student_semantic, task_id=create_dataframe_missed_days, execution_date=20230920T202215, start_date=20230920T202216, end_date=20230920T202217
+[2023-09-20T20:22:17.282+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 155 for task create_dataframe_missed_days ('NoneType' object is not subscriptable; 1632)
+[2023-09-20T20:22:17.300+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-20T20:22:17.316+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

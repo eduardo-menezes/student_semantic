@@ -1,0 +1,66 @@
+[2023-09-20T20:47:21.929+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: student_semantic.create_dataframe_student manual__2023-09-20T20:47:20.161616+00:00 [queued]>
+[2023-09-20T20:47:21.937+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: student_semantic.create_dataframe_student manual__2023-09-20T20:47:20.161616+00:00 [queued]>
+[2023-09-20T20:47:21.937+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-09-20T20:47:21.949+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): create_dataframe_student> on 2023-09-20 20:47:20.161616+00:00
+[2023-09-20T20:47:21.954+0000] {standard_task_runner.py:57} INFO - Started process 2306 to run task
+[2023-09-20T20:47:21.956+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'student_semantic', 'create_dataframe_student', 'manual__2023-09-20T20:47:20.161616+00:00', '--job-id', '247', '--raw', '--subdir', 'DAGS_FOLDER/student_semantic.py', '--cfg-path', '/tmp/tmpt_lh311g']
+[2023-09-20T20:47:21.958+0000] {standard_task_runner.py:85} INFO - Job 247: Subtask create_dataframe_student
+[2023-09-20T20:47:21.996+0000] {task_command.py:415} INFO - Running <TaskInstance: student_semantic.create_dataframe_student manual__2023-09-20T20:47:20.161616+00:00 [running]> on host 6086152831d6
+[2023-09-20T20:47:22.274+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='student_semantic' AIRFLOW_CTX_TASK_ID='create_dataframe_student' AIRFLOW_CTX_EXECUTION_DATE='2023-09-20T20:47:20.161616+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-20T20:47:20.161616+00:00'
+[2023-09-20T20:47:22.282+0000] {logging_mixin.py:151} INFO - json_data {'students': [{'student_id': 'S001', 'name': 'Alice Johnson', 'grades': {'math': 90, 'science': 85, 'history': 78, 'english': 92}}, {'student_id': 'S002', 'name': 'Bob Smith', 'grades': {'math': 88, 'science': 76, 'history': 82, 'english': 90}}, {'student_id': 'S003', 'name': 'Charlie Brown', 'grades': {'math': 92, 'science': 89, 'history': 80, 'english': 94}}, {'student_id': 'S004', 'name': 'David Lee', 'grades': {'math': 78, 'science': 92, 'history': 85, 'english': 88}}, {'student_id': 'S005', 'name': 'Eva Martinez', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S006', 'name': 'Frank Wilson', 'grades': {'math': 91, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S007', 'name': 'Grace Adams', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S008', 'name': 'Hannah White', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S009', 'name': 'Ian Hall', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S010', 'name': 'Jessica Turner', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S011', 'name': 'Kevin Parker', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S012', 'name': 'Linda Brooks', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S013', 'name': 'Michael Green', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S014', 'name': 'Natalie Adams', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S015', 'name': 'Olivia Foster', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S016', 'name': 'Peter Turner', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S017', 'name': 'Quincy Parker', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S018', 'name': 'Rachel Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S019', 'name': 'Samuel Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S020', 'name': 'Taylor Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S021', 'name': 'Uma Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S022', 'name': 'Victor Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S023', 'name': 'Wendy Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S024', 'name': 'Xander Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S025', 'name': 'Yara Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S026', 'name': 'Zachary Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S027', 'name': 'Ava Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S028', 'name': 'Benjamin Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S029', 'name': 'Catherine Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S030', 'name': 'Daniel Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S031', 'name': 'Emily Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S032', 'name': 'Finn Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S033', 'name': 'Grace Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S034', 'name': 'Henry Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S035', 'name': 'Isabella Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S036', 'name': 'Jacob Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S037', 'name': 'Katherine Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S038', 'name': 'Liam Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S039', 'name': 'Mia Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S040', 'name': 'Noah Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S041', 'name': 'Olivia Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S042', 'name': 'Peter Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S043', 'name': 'Quincy Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S044', 'name': 'Rachel Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S045', 'name': 'Samuel Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}, {'student_id': 'S046', 'name': 'Taylor Adams', 'grades': {'math': 92, 'science': 84, 'history': 89, 'english': 76}}, {'student_id': 'S047', 'name': 'Uma Turner', 'grades': {'math': 76, 'science': 88, 'history': 90, 'english': 85}}, {'student_id': 'S048', 'name': 'Victor Hall', 'grades': {'math': 94, 'science': 78, 'history': 88, 'english': 81}}, {'student_id': 'S049', 'name': 'Wendy Brooks', 'grades': {'math': 89, 'science': 92, 'history': 84, 'english': 90}}, {'student_id': 'S050', 'name': 'Xander Green', 'grades': {'math': 85, 'science': 90, 'history': 76, 'english': 92}}]}
+[2023-09-20T20:47:22.285+0000] {python.py:194} INFO - Done. Returned value was:    student_id              name  ...  grades_history  grades_english
+0        S001     Alice Johnson  ...              78              92
+1        S002         Bob Smith  ...              82              90
+2        S003     Charlie Brown  ...              80              94
+3        S004         David Lee  ...              85              88
+4        S005      Eva Martinez  ...              76              92
+5        S006      Frank Wilson  ...              89              76
+6        S007       Grace Adams  ...              90              85
+7        S008      Hannah White  ...              88              81
+8        S009          Ian Hall  ...              84              90
+9        S010    Jessica Turner  ...              76              92
+10       S011      Kevin Parker  ...              89              76
+11       S012      Linda Brooks  ...              90              85
+12       S013     Michael Green  ...              88              81
+13       S014     Natalie Adams  ...              84              90
+14       S015     Olivia Foster  ...              76              92
+15       S016      Peter Turner  ...              89              76
+16       S017     Quincy Parker  ...              90              85
+17       S018       Rachel Hall  ...              88              81
+18       S019     Samuel Brooks  ...              84              90
+19       S020      Taylor Green  ...              76              92
+20       S021         Uma Adams  ...              89              76
+21       S022     Victor Turner  ...              90              85
+22       S023        Wendy Hall  ...              88              81
+23       S024     Xander Brooks  ...              84              90
+24       S025        Yara Green  ...              76              92
+25       S026     Zachary Adams  ...              89              76
+26       S027        Ava Turner  ...              90              85
+27       S028     Benjamin Hall  ...              88              81
+28       S029  Catherine Brooks  ...              84              90
+29       S030      Daniel Green  ...              76              92
+30       S031       Emily Adams  ...              89              76
+31       S032       Finn Turner  ...              90              85
+32       S033        Grace Hall  ...              88              81
+33       S034      Henry Brooks  ...              84              90
+34       S035    Isabella Green  ...              76              92
+35       S036       Jacob Adams  ...              89              76
+36       S037  Katherine Turner  ...              90              85
+37       S038         Liam Hall  ...              88              81
+38       S039        Mia Brooks  ...              84              90
+39       S040        Noah Green  ...              76              92
+40       S041      Olivia Adams  ...              89              76
+41       S042      Peter Turner  ...              90              85
+42       S043       Quincy Hall  ...              88              81
+43       S044     Rachel Brooks  ...              84              90
+44       S045      Samuel Green  ...              76              92
+45       S046      Taylor Adams  ...              89              76
+46       S047        Uma Turner  ...              90              85
+47       S048       Victor Hall  ...              88              81
+48       S049      Wendy Brooks  ...              84              90
+49       S050      Xander Green  ...              76              92
+
+[50 rows x 6 columns]
+[2023-09-20T20:47:22.323+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=student_semantic, task_id=create_dataframe_student, execution_date=20230920T204720, start_date=20230920T204721, end_date=20230920T204722
+[2023-09-20T20:47:22.370+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-20T20:47:22.384+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

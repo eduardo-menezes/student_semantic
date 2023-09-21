@@ -1,0 +1,65 @@
+[2023-09-21T01:05:07.455+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: student_semantic.transform manual__2023-09-21T01:05:02.450844+00:00 [queued]>
+[2023-09-21T01:05:07.462+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: student_semantic.transform manual__2023-09-21T01:05:02.450844+00:00 [queued]>
+[2023-09-21T01:05:07.463+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-09-21T01:05:07.475+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): transform> on 2023-09-21 01:05:02.450844+00:00
+[2023-09-21T01:05:07.479+0000] {standard_task_runner.py:57} INFO - Started process 1234 to run task
+[2023-09-21T01:05:07.482+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'student_semantic', 'transform', 'manual__2023-09-21T01:05:02.450844+00:00', '--job-id', '412', '--raw', '--subdir', 'DAGS_FOLDER/student_semantic.py', '--cfg-path', '/tmp/tmps8s73gzf']
+[2023-09-21T01:05:07.484+0000] {standard_task_runner.py:85} INFO - Job 412: Subtask transform
+[2023-09-21T01:05:07.522+0000] {task_command.py:415} INFO - Running <TaskInstance: student_semantic.transform manual__2023-09-21T01:05:02.450844+00:00 [running]> on host fd67d4db30a8
+[2023-09-21T01:05:07.581+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='student_semantic' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2023-09-21T01:05:02.450844+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-21T01:05:02.450844+00:00'
+[2023-09-21T01:05:07.628+0000] {python.py:194} INFO - Done. Returned value was:    student_id              name  ...  grades_english  missed_days
+0        S001     Alice Johnson  ...              92            3
+1        S002         Bob Smith  ...              90            5
+2        S003     Charlie Brown  ...              94            2
+3        S004         David Lee  ...              88            1
+4        S005      Eva Martinez  ...              92            4
+5        S006      Frank Wilson  ...              76            2
+6        S007       Grace Adams  ...              85            3
+7        S008      Hannah White  ...              81            1
+8        S009          Ian Hall  ...              90            6
+9        S010    Jessica Turner  ...              92            3
+10       S011      Kevin Parker  ...              76            4
+11       S012      Linda Brooks  ...              85            2
+12       S013     Michael Green  ...              81            5
+13       S014     Natalie Adams  ...              90            3
+14       S015     Olivia Foster  ...              92            2
+15       S016      Peter Turner  ...              76            4
+16       S017     Quincy Parker  ...              85            3
+17       S018       Rachel Hall  ...              81            1
+18       S019     Samuel Brooks  ...              90            2
+19       S020      Taylor Green  ...              92            5
+20       S021         Uma Adams  ...              76            3
+21       S022     Victor Turner  ...              85            4
+22       S023        Wendy Hall  ...              81            2
+23       S024     Xander Brooks  ...              90            1
+24       S025        Yara Green  ...              92            5
+25       S026     Zachary Adams  ...              76            2
+26       S027        Ava Turner  ...              85            3
+27       S028     Benjamin Hall  ...              81            4
+28       S029  Catherine Brooks  ...              90            2
+29       S030      Daniel Green  ...              92            1
+30       S031       Emily Adams  ...              76            3
+31       S032       Finn Turner  ...              85            5
+32       S033        Grace Hall  ...              81            2
+33       S034      Henry Brooks  ...              90            4
+34       S035    Isabella Green  ...              92            3
+35       S036       Jacob Adams  ...              76            1
+36       S037  Katherine Turner  ...              85            2
+37       S038         Liam Hall  ...              81            5
+38       S039        Mia Brooks  ...              90            3
+39       S040        Noah Green  ...              92            4
+40       S041      Olivia Adams  ...              76            2
+41       S042      Peter Turner  ...              85            1
+42       S043       Quincy Hall  ...              81            5
+43       S044     Rachel Brooks  ...              90            3
+44       S045      Samuel Green  ...              92            2
+45       S046      Taylor Adams  ...              76            4
+46       S047        Uma Turner  ...              85            3
+47       S048       Victor Hall  ...              81            1
+48       S049      Wendy Brooks  ...              90            2
+49       S050      Xander Green  ...              92            5
+
+[50 rows x 7 columns]
+[2023-09-21T01:05:07.655+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=student_semantic, task_id=transform, execution_date=20230921T010502, start_date=20230921T010507, end_date=20230921T010507
+[2023-09-21T01:05:07.695+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-21T01:05:07.713+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,13 @@
+[2023-09-20T20:45:32.674+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: student_semantic.send_to_processed_lake manual__2023-09-20T20:45:31.569835+00:00 [queued]>
+[2023-09-20T20:45:32.683+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: student_semantic.send_to_processed_lake manual__2023-09-20T20:45:31.569835+00:00 [queued]>
+[2023-09-20T20:45:32.684+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-09-20T20:45:32.695+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): send_to_processed_lake> on 2023-09-20 20:45:31.569835+00:00
+[2023-09-20T20:45:32.700+0000] {standard_task_runner.py:57} INFO - Started process 2242 to run task
+[2023-09-20T20:45:32.703+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'student_semantic', 'send_to_processed_lake', 'manual__2023-09-20T20:45:31.569835+00:00', '--job-id', '235', '--raw', '--subdir', 'DAGS_FOLDER/student_semantic.py', '--cfg-path', '/tmp/tmpns194mli']
+[2023-09-20T20:45:32.706+0000] {standard_task_runner.py:85} INFO - Job 235: Subtask send_to_processed_lake
+[2023-09-20T20:45:32.747+0000] {task_command.py:415} INFO - Running <TaskInstance: student_semantic.send_to_processed_lake manual__2023-09-20T20:45:31.569835+00:00 [running]> on host 6086152831d6
+[2023-09-20T20:45:33.017+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='student_semantic' AIRFLOW_CTX_TASK_ID='send_to_processed_lake' AIRFLOW_CTX_EXECUTION_DATE='2023-09-20T20:45:31.569835+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-20T20:45:31.569835+00:00'
+[2023-09-20T20:45:33.018+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-20T20:45:33.036+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=student_semantic, task_id=send_to_processed_lake, execution_date=20230920T204531, start_date=20230920T204532, end_date=20230920T204533
+[2023-09-20T20:45:33.077+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-20T20:45:33.097+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
