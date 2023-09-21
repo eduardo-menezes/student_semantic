@@ -2782,3 +2782,52 @@ NameError: name 'role' is not defined
 [2023-09-21T02:32:40.053+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:32:40.053+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-21T02:32:40.068+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:32:40.068+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
 [2023-09-21T02:32:40.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.078 seconds
+[2023-09-21T02:33:10.254+0000] {processor.py:157} INFO - Started process (PID=2942) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:10.257+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:33:10.257+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:10.257+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:10.287+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:10.301+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:10.301+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:33:10.316+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:10.316+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:33:10.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.082 seconds
+[2023-09-21T02:33:40.463+0000] {processor.py:157} INFO - Started process (PID=2950) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:40.466+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:33:40.467+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:40.466+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:40.496+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:33:40.512+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:40.512+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:33:40.530+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:33:40.530+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:33:40.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.087 seconds
+[2023-09-21T02:34:10.680+0000] {processor.py:157} INFO - Started process (PID=2958) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:10.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:34:10.684+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:10.683+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:10.714+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:10.730+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:10.730+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:34:10.749+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:10.749+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:34:10.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.092 seconds
+[2023-09-21T02:34:40.899+0000] {processor.py:157} INFO - Started process (PID=2966) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:40.902+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:34:40.903+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:40.903+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:40.934+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:34:40.947+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:40.946+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:34:40.962+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:34:40.962+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:34:40.978+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.082 seconds
+[2023-09-21T02:35:11.102+0000] {processor.py:157} INFO - Started process (PID=2974) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:11.102+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:35:11.103+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:11.102+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:11.136+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:11.150+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:11.149+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:35:11.167+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:11.167+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:35:11.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.082 seconds
+[2023-09-21T02:35:41.326+0000] {processor.py:157} INFO - Started process (PID=2982) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:41.329+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:35:41.330+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:41.330+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:41.369+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:35:41.384+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:41.384+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:35:41.400+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:35:41.400+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:35:41.418+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.095 seconds
+[2023-09-21T02:36:11.551+0000] {processor.py:157} INFO - Started process (PID=2990) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:36:11.551+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T02:36:11.552+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:36:11.552+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:36:11.585+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T02:36:11.600+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:36:11.600+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T02:36:11.618+0000] {logging_mixin.py:151} INFO - [2023-09-21T02:36:11.618+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-20T05:00:00+00:00, run_after=2023-09-21T05:00:00+00:00
+[2023-09-21T02:36:11.637+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.090 seconds
