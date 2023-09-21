@@ -39,6 +39,35 @@ The **relatioship** between students and missed_classes is described in Fig.2. s
 
 ![](modelagem.png "Relationship")**Fig.2**
 
+The final table in Snowflake has the shape shown in Fig.3
 
 
+![](snowflake_data.png "Relationship")**Fig.3**
+
+
+## The Infrastructure
+
+The workflow is inside the airflow:2.7.1 as shown in the Dockerfile with Python3.8
+
+~~~Docker
+FROM apache/airflow:2.7.1
+COPY requirements.txt .
+
+ENV PYTHON_VERSION=3.8
+ENV CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+RUN pip install --no-cache-dir "apache-airflow==${AIRFLOW_VERSION}" --constraint ${CONSTRAINT_URL} -r requirements.txt
+~~~
+
+# Dag folder organization
+In order to organize the dags, a folder called "package" were created to represent UDF that transforms the data. student_semantic is related to student_semantic dag, so each dag will have its own UDF folder to organize project code
+
+~~~bash
+├── dags
+│   ├── __pycache__
+│   │   └── student_semantic.cpython-38.pyc
+│   ├── packages
+│   │   └── student_semantic
+│   │       └── student_semantic.py
+│   └── student_semantic.py
+~~~
 
