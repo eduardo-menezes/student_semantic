@@ -1,13 +1,14 @@
+# [START importing packages, UDF and env variables]
 from airflow.models import DAG, Variable
 from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
+import datetime as dt
 from packages.student_semantic.student_semantic import (
     read_json_data,
     create_dataframe,
     transform,
     send_to_snowflake,
 )
-import datetime as dt
 
 user = Variable.get("user")
 password = Variable.get("password")
@@ -18,7 +19,9 @@ schema = Variable.get("schema")
 role = Variable.get("role")
 path_student_data = "data/raw/students/students.json"
 path_missed_days_data = "data/raw/missed_days/missed_days.json"
+# [END importing packages, UDF and env variables]
 
+# [START DAG definition]
 with DAG(
     "student_semantic",
     schedule="0 5 * * *",
@@ -65,7 +68,9 @@ with DAG(
         task_id="transform",
         python_callable=transform,
         op_kwargs={
-            "task": ["create_dataframe_student", "create_dataframe_missed_days"]
+            "task": ["create_dataframe_student", "create_dataframe_missed_days"],
+            "how_to_merge": "left",
+            "pk_fk": "student_id",
         },
         provide_context=True,
     )
@@ -86,8 +91,13 @@ with DAG(
         provide_context=True,
     )
 
+    end_pipeline = DummyOperator(task_id="end")
+
     start_pipeline >> [read_student_data, read_missed_days_data],
     read_student_data >> create_dataframe_student,
     read_missed_days_data >> create_dataframe_missed_days,
     [create_dataframe_student, create_dataframe_missed_days] >> transform,
-    transform >> send_to_snowflake
+    transform >> send_to_snowflake,
+    send_to_snowflake >> end_pipeline
+
+# [END DAG definition]
