@@ -5055,3 +5055,19 @@ NameError: name 'dt' is not defined
 [2023-09-21T08:30:40.626+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:30:40.626+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-21T08:30:40.729+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:30:40.729+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-21T05:00:00+00:00, run_after=2023-09-22T05:00:00+00:00
 [2023-09-21T08:30:40.747+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.568 seconds
+[2023-09-21T08:31:10.927+0000] {processor.py:157} INFO - Started process (PID=2345) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:10.927+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T08:31:10.929+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:10.929+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:11.249+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103 UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+[2023-09-21T08:31:11.349+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:11.361+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:11.361+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T08:31:11.376+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:11.376+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-21T05:00:00+00:00, run_after=2023-09-22T05:00:00+00:00
+[2023-09-21T08:31:11.394+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.470 seconds
+[2023-09-21T08:31:41.575+0000] {processor.py:157} INFO - Started process (PID=2355) to work on /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:41.578+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/student_semantic.py for tasks to queue
+[2023-09-21T08:31:41.579+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:41.579+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:41.909+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/snowflake/connector/options.py:103 UserWarning: You have an incompatible version of 'pyarrow' installed (11.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+[2023-09-21T08:31:42.018+0000] {processor.py:839} INFO - DAG(s) dict_keys(['student_semantic']) retrieved from /opt/airflow/dags/student_semantic.py
+[2023-09-21T08:31:42.034+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:42.033+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-21T08:31:42.053+0000] {logging_mixin.py:151} INFO - [2023-09-21T08:31:42.053+0000] {dag.py:3696} INFO - Setting next_dagrun for student_semantic to 2023-09-21T05:00:00+00:00, run_after=2023-09-22T05:00:00+00:00
+[2023-09-21T08:31:42.071+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/student_semantic.py took 0.500 seconds
