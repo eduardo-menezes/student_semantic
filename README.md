@@ -5,11 +5,14 @@ To undestand the students performance, the customer experience of a paid school 
 
 The goal here is to discover the students who needs help, design a solution so that we could avoid churn and calculate the amount of money that keeping them will provide.
 
-## Quastions
-1. What's the overall avarage per student?
-2. What percent of students have grades higher than 70?
-3. Is there any relationship between number of absences and final grade?
-4. Do students who miss more than 5 days tends to have lower grades?
+## Questions
+1. What's the overall avarage per subject?
+2. What's the overall avarage per student?
+3. What percent of students have grades higher than 70?
+4. Is there any relationship between number of absences and final grade?
+5. Do students who miss more than 5 days tends to have lower grades?
+
+*Attention: These questions are answered in the notebook of this project called student_analysis*
 
 ## Overview of the Dataset
 
